@@ -1,0 +1,38 @@
+.kader {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 25% 0 25%;
+}
+
+.kader th {
+}
+
+.kader td {
+  text-align: center;
+}
+
+#play_again {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  height: 7%;
+  background-image: url(assets/images/Soccer-ball-0-71942922_m.jpg);
+  margin-top: 3rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #131111;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: darkorchid;
+}

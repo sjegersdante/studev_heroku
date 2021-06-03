@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Flama";
+  src: url("fonts/Flama Regular.otf");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Flama";
+}
+.logo {
+  width: 50%;
+  height: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-image: url(assets/images/pricing-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+footer {
+  background-image: url(assets/images/pricing-bg.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer p {
+  display: inline;
+  margin: 0 2rem 0 2rem;
+}
+main h1 {
+  text-align: center;
+  padding-top: 2rem;
+}

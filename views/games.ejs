@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./assets/images/Studevs Logo Final.png">
+    <link rel="stylesheet" href="games.css"/>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studevs | Games</title>
+  <body>
+    <!--Header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand" href="/"><img src="./assets/images/Studevs Logo Final.png" alt="Logo Studevs" width="150" height="auto" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/#about">About</a>
+              <a class="nav-link" href="games">Games</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Breadcrumb & Half Circle Header-->
+    <div class="container half-circle-bg">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/" style="text-decoration: none; font-weight: bold;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="font-weight: bold;">Games</li>
+        </ol>
+      </nav>
+      <!--Games-->
+      <div class="container games" id="games">
+        <div class="row">
+          <div class="col-xs"></div>
+          <div class="col-lg">
+            <h1 id="gamepage-title" class="text-center">Games: Theme Selection</h1>
+            <h4 id="gamepage-subtitle" class="text-center">Select your prefered Game Theme</h4>
+          </div>
+          <div class="col-xs"></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- Coming Soon Modal -->
+      <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="comingSoonModalLabel">StuDevs Alert</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/images/clock.svg" id="clock" alt="Logo Studevs" width="100" height="auto">
+              <p class="text-center">Coming soon...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Game Theme Cards -->
+      <div class="row game-cards">
+        <div class="col-sm-5">
+          <a href="fifagame" style="text-decoration: none;">
+            <div class="card">
+              <img src="./assets/images/Fifa Final1.png" class="card-img-top img-fluid" alt="Fifa Games">
+              <div class="card-overlay">
+                <div class="card-body">
+                  <h3 class="card-title">Fifa</h3>
+                  <p class="card-text">Details</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-5">
+          <a href="" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="text-decoration: none;">
+            <div class="card">
+              <img src="./assets/images/The One Final1.png" class="card-img-top img-fluid" alt="LOTR Games">
+              <div class="card-overlay">
+                <div class="card-body">
+                  <h3 class="card-title">Lord Of The<br>Rings</h3>
+                  <p class="card-text">Details</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-5">
+          <a href="" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="text-decoration: none;">
+            <div class="card">
+              <img src="./assets/images/Lego Final1.png" class="card-img-top img-fluid" alt="Lego Games">
+              <div class="card-overlay">
+                <div class="card-body">
+                  <h3 class="card-title">Lego</h3>
+                  <p class="card-text">Details</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-5">
+          <a href="" data-bs-toggle="modal" data-bs-target="#comingSoonModal" style="text-decoration: none;">
+            <div class="card">
+              <img src="./assets/images/Fortnite Final1.png" class="card-img-top img-fluid" alt="Fortnite Games">
+              <div class="card-overlay">
+                <div class="card-body">
+                  <h3 class="card-title">Fortnite</h3>
+                  <p class="card-text">Details</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--Curved Footer BG-->
+      <div class="container half-circle-footer-bg"></div>
+    </main>
+      <!--Footer-->
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Games</h3>
+                      <ul>
+                          <li><a href="#">Fifa</a></li>
+                          <li><a href="#">Fortnite</a></li>
+                          <li><a href="#">Legomasters</a></li>
+                          <li><a href="#">The One</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>About</h3>
+                      <ul>
+                          <li><a href="/#about">Team</a></li>
+                          <li><a href="https://www.ap.be/graduaat/programmeren" target="_blank">AP Hogeschool</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>StuDevs</h3>
+                      <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                  </div>
+                  <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+              </div>
+              <p class="copyright">StuDevs © 2020</p>
+          </div>
+      </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
