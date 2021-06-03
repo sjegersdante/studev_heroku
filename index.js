@@ -1,5 +1,3 @@
-import { promises } from "dns";
-
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
@@ -24,7 +22,7 @@ app.set('port', 3000);
 //doFetch();
 
 //Fetches Club Names
-let clubs:any = {};
+let clubs = {};
 const doFetch = async() => {
     let response = await fetch('https://futdb.app/api/clubs?page=1', 
     { 
@@ -38,7 +36,7 @@ const doFetch = async() => {
 doFetch();
 
 //Fetches League Names
-let leagues:any = {};
+let leagues = {};
 const getLeagues = async() => {
     let leagueRes = await fetch('https://futdb.app/api/leagues?page=1', 
     { 
@@ -52,7 +50,7 @@ const getLeagues = async() => {
 getLeagues();
 
 //Fetches Club Logo
-let clubImage:any = {};
+let clubImage = {};
 const getImage = async() => {
     try {
         const promise = await fetch('https://futdb.app/api/clubs/1/image', {
@@ -72,7 +70,7 @@ const getImage = async() => {
 getImage();
 
 //Fetches League Logo
-let leagueImage:any = {};
+let leagueImage = {};
 const getleagueImage = async() => {
     try {
         const promise = await fetch('https://futdb.app/api/leagues/13/image', {
@@ -92,31 +90,29 @@ const getleagueImage = async() => {
 getleagueImage();
 
 
-app.get('/',(req:any,res:any)=>{
+app.get('/',(req, res)=>{
     res.render("index")
 });
 
-app.get('/fifagame-active-part2',(req:any,res:any)=>{
+app.get('/fifagame-active-part2',(req,res)=>{
     res.render("fifagame-active-part2", {leagueImage: leagueImage, clubs: clubs});
 });
 
-app.get('/fifagame-active',(req:any,res:any)=>{
+app.get('/fifagame-active',(req,res)=>{
     res.render("fifagame-active", {clubImage: clubImage, leagues: leagues});
 });
 
-app.get('/fifagame',(req:any,res:any)=>{
+app.get('/fifagame',(req,res)=>{
     res.render("fifagame", {clubs: clubs});
 });
 
-app.get('/games',(req:any,res:any)=>{
+app.get('/games',(req,res)=>{
     res.render("games", {clubs: clubs});
 });
 
-app.get('/scorebord',(req:any,res:any)=>{
+app.get('/scorebord',(req,res)=>{
     res.render("scorebord", {clubs: clubs});
 });
 
 app.listen(app.get('port'),
 ()=>console.log( '[server] http://localhost:' + app.get('port')));
-
-export {};
