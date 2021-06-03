@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 //app.use(express.static(__dirname + '/public'));
-app.set('port', 3000);
+// app.set('port', 3000);
 
 //let clubs:any = {};
 //const doFetch = async() => {
@@ -114,5 +114,6 @@ app.get('/scorebord',(req,res)=>{
     res.render("scorebord", {clubs: clubs});
 });
 
-app.listen(app.get('port'),
-()=>console.log( '[server] http://localhost:' + app.get('port')));
+app.listen(process.env.PORT || 5000)
+// app.listen(app.get('port'),
+// ()=>console.log( '[server] http://localhost:' + app.get('port')));
